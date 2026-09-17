@@ -78,28 +78,50 @@ window.location.href = "signIn.html";
 return false;
 }
 
-function togglePassword()
-{
-    var password = document.getElementById("pwd");
-    if(password.type == "password")
-    {
-        password.type = "text";
-    }
-    else
-    {
-        password.type = "password";
-    }
-}
+// function togglePassword()
+// {
+//     var password = document.getElementById("pwd");
+//     if(password.type == "password")
+//     {
+//         password.type = "text";
+//     }
+//     else
+//     {
+//         password.type = "password";
+//     }
+// }
 
-function toggleConfirmPassword()
-{
-    var confirmpassword = document.getElementById("cpwd");
-    if(confirmpassword.type == "password")
-    {
-        confirmpassword.type = "text";
+// function toggleConfirmPassword()
+// {
+//     var confirmpassword = document.getElementById("cpwd");
+//     if(confirmpassword.type == "password")
+//     {
+//         confirmpassword.type = "text";
+//     }
+//     else
+//     {
+//         confirmpassword.type = "password";
+//     }
+// }
+
+var c = document.getElementById("checkpwd");
+var d = document.getElementById("checkcpwd");
+var pwd = document.getElementById("pwd");
+var cpwd = document.getElementById("cpwd");
+c.addEventListener("click", function () { 
+    if (c.checked) {
+        pwd.type = "text";
+    } else {
+        pwd.type = "password";
     }
-    else
-    {
-        confirmpassword.type = "password";
+});
+d.addEventListener("click", function () { 
+    if (d.checked) {
+        cpwd.type = "text";
+    } else {
+        cpwd.type = "password";
     }
-}
+});
+
+
+
