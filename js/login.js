@@ -51,7 +51,6 @@ else
 // }
 
 var c = document.getElementById("loginpwd");
-c.style.color = "red";
 var ch = document.getElementById("checkpwd");
 ch.addEventListener("click", function () { 
     if (ch.checked) {
