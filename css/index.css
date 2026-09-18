@@ -208,3 +208,13 @@ a {
   }
 }
  */
+
+ @media screen and (max-width:769px) {
+  form{
+    width: 80%;
+  }
+  h2{
+    font-size: clamp(14px, 2vw, 32px);
+  }
+  
+ }
