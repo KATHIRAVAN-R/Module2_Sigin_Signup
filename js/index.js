@@ -29,7 +29,7 @@ confirmerror.textContent = "";
 
 if(fullname == "" || fullname == null)
 {
-    nerror.textContent = "Full Name cannot be blank";
+    nerror.textContent = "Enter The Name";
     return false;
 }
 if(email == "" || !emailregex.test(email))
@@ -55,13 +55,13 @@ if(password == "" || !passwordregex.test(password))
 }
 if(confirmpassword == "")
 {
-    confirmerror.textContent = "Confirm Password cannot be blank";
+    confirmerror.textContent = "Enter The Password";
     return false;
 }
 
 if(password != confirmpassword)
 {
-    confirmerror.textContent = "Password and Confirm Password do not match";
+    confirmerror.textContent = "Password and Confirm Password must be same";
     return false;
 }
 

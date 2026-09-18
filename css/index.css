@@ -30,8 +30,7 @@ form {
   background-color: transparent; */
 
   font-family: "Courier New", Courier, monospace;
-  padding: 2em;
-  border: 2px solid red;
+  padding: 1em;
   color: #ff7a18;
   background-color: rgba(255, 255, 255, 0.247);
   border-radius: 2rem;
@@ -96,7 +95,7 @@ button:hover {
   margin-top: -8px;
   margin-bottom: 10px;
   color: red;
-  font-size: 13px;
+  font-size: 1em;
 }
 
 p {
@@ -127,7 +126,7 @@ a {
 }
 .pwd-group input[type="checkbox"]{
   accent-color: #ff7a18;
-  width: 10%;
+  width: 5%;
 }
 /* .password-box input {
   flex: 1;
@@ -153,10 +152,23 @@ a {
 }
 
 #signupbtn {
-  width: 200px;
+  /* width: 200px;
   padding: 10px;
   border-radius: 8px;
-  font-weight: bold;
+  font-weight: bold; */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ff7a18;
+  font-weight: bolder;
+  text-shadow: 2px 2px 5px #241c15c4;
+  box-shadow: 2px 2px 5px #ff7a18;
+  
+}
+#signupbtn:hover{
+  background-color: white;
+  color: #ff7a18;
+  text-shadow: 2px 2px 5px #ff7a18;
+  box-shadow: 2px 2px 5px 2px #ff7a18;
 }
 /* @media (max-width: 768px) { */
 /* form {
