@@ -208,6 +208,22 @@ a {
   }
 }
  */
+ .signinbtn{
+    padding: 10px;
+  border-radius: 5px;
+  background-color: #ff7a18;
+  font-weight: bolder;
+  text-shadow: 2px 2px 5px #241c15c4;
+  box-shadow: 2px 2px 5px #ff7a18;
+
+ }
+  .showpwd:hover, .signinbtn:hover{
+  background-color: white;
+  color: #ff7a18;
+  text-shadow: 2px 2px 5px #ff7a18;
+  box-shadow: 2px 2px 5px 2px #ff7a18;
+
+ }
 
  @media screen and (max-width:769px) {
   form{

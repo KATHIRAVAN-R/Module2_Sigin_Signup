@@ -15,14 +15,22 @@
         <label>Email:</label>
         <input type="email" id="loginemail" placeholder="Enter your email">
         <span id="login-email-error" class="error-message"></span>
-        <br>
-        <label>Password:</label>
+        <!-- <label>Password:</label>
         <input type="password" id="loginpwd" placeholder="Enter your password">
-        <button type="button" onclick="toggleLoginPassword()">Show</button>
+        <button type="button" class="showpwd" onclick="toggleLoginPassword()">Show</button>
         <span id="login-password-error" class="error-message"></span>
-        <br>
+        <input type="checkbox" name="" id="checkbox"> -->
+        <div class="password-box">
+            <label>Password:</label>
+            <div class="pwd-group">
+                <input type="password" id="loginpwd" placeholder="Enter your password">
+                <!-- <button type="button" onclick="togglePassword()">Show</button> -->
+                <input type="checkbox" name="" id="checkpwd">
+            </div>
+            <span id="login-password-error" class="error-message"></span>
+        </div>
         <div class="btn-container">
-            <button class="register" type="submit">Sign In</button>
+            <button class="register signinbtn" type="submit">Sign In</button>
         </div>
         <p>
             Don't have an account?
@@ -31,4 +39,5 @@
     </form>
     <script src="js/login.js"></script>
 </body>
+
 </html>

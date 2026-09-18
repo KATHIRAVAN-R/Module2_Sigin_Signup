@@ -37,15 +37,27 @@ else
 }
 }
 
-function toggleLoginPassword()
-{
-    var password = document.getElementById("loginpwd");
-    if(password.type == "password")
-    {
-        password.type = "text";
+// function toggleLoginPassword()
+// {
+//     var password = document.getElementById("loginpwd");
+//     if(password.type == "password")
+//     {
+//         password.type = "text";
+//     }
+//     else
+//     {
+//         password.type = "password";
+//     }
+// }
+
+var c = document.getElementById("loginpwd");
+c.style.color = "red";
+var ch = document.getElementById("checkpwd");
+ch.style.outline = "2px solid red"
+ch.addEventListener("click", function () { 
+    if (ch.checked) {
+        c.type = "text";
+    } else {
+        c.type = "password";
     }
-    else
-    {
-        password.type = "password";
-    }
-}
+});
