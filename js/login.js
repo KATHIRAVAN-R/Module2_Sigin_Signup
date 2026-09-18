@@ -25,7 +25,7 @@ var savedEmail = localStorage.getItem("email");
 var savedPassword = localStorage.getItem("password");
 if(loginemail == savedEmail && loginpassword == savedPassword)
 {
-    alert("hi");
+
     alert("Login Successful!");
     window.location.href = "module1/index.html";
     return false;
@@ -53,7 +53,6 @@ else
 var c = document.getElementById("loginpwd");
 c.style.color = "red";
 var ch = document.getElementById("checkpwd");
-ch.style.outline = "2px solid red"
 ch.addEventListener("click", function () { 
     if (ch.checked) {
         c.type = "text";
