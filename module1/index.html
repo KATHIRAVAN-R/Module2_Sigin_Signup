@@ -251,14 +251,8 @@
             // 1. Clear tokens or user data from browser storage
             localStorage.removeItem('authToken');
             sessionStorage.clear();
-
-            // 2. Clear authentication cookies if applicable
-            document.cookie = "authToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-
-            // 3. Optional: Notify your backend server to revoke the session/token
-
             // 4. Redirect the user to the login or landing page
-            window.location.href = "signIn.html";
+            window.location.href = "../signIn.html";
         }
 
         // Attach the function to your Sign Out UI element
